@@ -30,7 +30,7 @@ namespace TrabajoGrupoPMM
             x.Locations = "1";
             wismi.Add(x);
 
-            await Navigation.PushAsync(MainPage);
+            await Navigation.PopAsync();
         }
 
     }
