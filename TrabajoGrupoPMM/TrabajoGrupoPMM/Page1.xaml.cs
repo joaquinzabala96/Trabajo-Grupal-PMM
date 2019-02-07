@@ -12,27 +12,25 @@ namespace TrabajoGrupoPMM
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Page1 : ContentPage
 	{
-        MainPage MainListView2;
+        List<ListViewTemplate> wismi;
 
-        public Page1 (MainPage MainListView)
+        public Page1 (List<ListViewTemplate> wismichu)
 		{
 			InitializeComponent ();
-            MainListView2 = MainListView;
+            wismi = wismichu;
 
         }
 
        async private void OnButtonClickedDone(object sender, EventArgs e)
         {
-           // MainListView2 = new List<ListViewTemplate>{
-           // new ListViewTemplate
-           //     {
-           //     Name = user.Text,
-           //     Locations= "Locations: 4",
-           //     OrderNumber = 1,
-           //     Password = password.Text
-           //    }
-           //};
-            await Navigation.PushAsync(MainPage());
+            ListViewTemplate x = new ListViewTemplate();
+            x.Name = user.Text;
+            x.Password = password.Text;
+            x.OrderNumber = 1;
+            x.Locations = "1";
+            wismi.Add(x);
+
+            await Navigation.PushAsync(MainPage);
         }
 
     }

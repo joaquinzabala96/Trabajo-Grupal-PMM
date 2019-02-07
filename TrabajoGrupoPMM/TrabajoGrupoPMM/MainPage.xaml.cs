@@ -10,19 +10,22 @@ namespace TrabajoGrupoPMM
 {
     public partial class MainPage : ContentPage
     {
-        public MainPage()
-        {
-            InitializeComponent();
-
-            MainListView.ItemsSource = new List<ListViewTemplate>{
+        public List<ListViewTemplate> wismichu = new List<ListViewTemplate>{
             new ListViewTemplate
                 {
                 Name = "Paco",
                 Locations= "Locations: 4",
                 OrderNumber = 1,
                 Password = "Paco"
-               }
-           };
+               } };
+
+        public MainPage()
+        {
+            InitializeComponent();
+
+            MainListView.ItemsSource = null;
+
+            MainListView.ItemsSource = wismichu;
         }
 
         async private void MainListView_ItemTapped(object sender, ItemTappedEventArgs e)
@@ -47,7 +50,7 @@ namespace TrabajoGrupoPMM
         }
         async private void OnButtonClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Page1());
+            await Navigation.PushAsync(new Page1(wismichu));
         }
     }
 }

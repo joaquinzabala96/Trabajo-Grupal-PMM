@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TrabajoGrupoPMM.Classes
 {
-    class ListViewTemplate
+    public class ListViewTemplate
     {
         public string Name { get; set; }
         public string Locations { get; set; }
