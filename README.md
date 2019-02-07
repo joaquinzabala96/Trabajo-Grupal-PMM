@@ -3,9 +3,10 @@ Trabajo en grupo PMM
 
 Trabajo en grupo PMM Integrantes del grupo:
 
-    Alvaro Morillas
-    Martin Lopez
-    Miguel Angel Rueda
-    Carlos Perez
-    Cristian Sanchez
+    Álvaro Morillas
+    Martín López
+    Miguel Ángel Rueda
+    Carlos Pérez
+    Cristian Sánchez
+    Álvaro Martín
     Joaquin Zabala
